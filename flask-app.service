@@ -3,8 +3,8 @@ Descriotion=Flask app service
 After=network.target
 
 [Service]
-WorkingDirectory=/home/maltysheva/app
-ExecStart=/home/maltysheva/app/venv/bin/python main.py
+WorkingDirectory=/home/maltisheva/app
+ExecStart=/home/maltisheva/app/venv/bin/python main.py
 
 [Install]
 WantedBy=multi-user.target
