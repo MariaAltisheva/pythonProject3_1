@@ -1,0 +1,18 @@
+version: '3.3'
+
+services:
+  web:
+    build: .
+    ports:
+      - "8080:25000"
+    environment:
+      - DB_POSTGRES_PASSWORD=db_password
+      - DB_POSTGRES_USERS=db_users
+      - DB_POSTGRES_DB=db_name
+
+  db:
+    image: postgres
+    environment:
+      - POSTGRES_PASSWORD=db_password
+      - POSTGRES_USERS=db_users
+      - POSTGRES_DB=db_name
