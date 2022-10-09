@@ -7,4 +7,4 @@ RUN pip install --no-cache -r requirements.txt
 
 COPY . .
 
-ENTRYPOINT ["sh", 'entrypoint.sh']
+ENTRYPOINT ["sh", "entrypoint.sh"]
