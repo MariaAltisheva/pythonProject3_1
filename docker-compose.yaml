@@ -3,5 +3,6 @@ version: '3.3'
 services:
   web:
     build: .
+    image: altishmari/test_app:v0.1.0
     ports:
       - "80:5000"
